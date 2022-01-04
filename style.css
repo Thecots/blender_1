@@ -1,0 +1,55 @@
+.container{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 20px auto;
+    background: #ddd;
+    display: flex;
+}
+
+.container div{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    transition: all 0.4s;
+}
+
+.container__box-1{
+    background: #f00;
+    left: 0;
+}
+
+.container__box-2{
+    background: #0f0;
+    right: 0;
+    top: 0;
+}
+
+.container__box-3{
+    background: #0ff;
+    bottom: 0;
+}
+
+.container__box-4{
+    background: #00f;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* hover */
+.container:hover .container__box-1{
+    left: calc(100% - 50px);
+}
+
+.container:hover .container__box-2{
+    top: calc(100% - 50px);
+}
+
+.container:hover .container__box-3{
+    bottom: calc(100% - 50px);
+}
+
+.container:hover .container__box-4{
+    right: calc(100% - 50px);
+} 
